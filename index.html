@@ -5,7 +5,7 @@
   <title>EmbodiedVSR: Dynamic Scene Graph-Guided Chain-of-Thought Reasoning</title>
   <meta name="description" content="EmbodiedVSR integrates dynamic scene graphs and Chain-of-Thought reasoning for zero-shot spatial understanding in embodied tasks.">
   <meta name="keywords" content="Embodied Intelligence, Scene Graph, Chain of Thought, Visual Reasoning, Robotics">
-
+  
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -70,19 +70,19 @@
             <span class="author-block">Renjing Xu<sup>2</sup><sup>†</sup>,</span>
             <span class="author-block">Jian Tang<sup>1</sup><sup>†</sup></span>
           </div>
-
+          
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Beijing Innovation Center of Humanoid Robotics,</span>
             <span class="author-block"><sup>2</sup>Hong Kong University of Science and Technology (Guangzhou),</span>
             <span class="author-block"><sup>3</sup>Hong Kong University of Science and Technology,</span>
             <span class="author-block"><sup>4</sup>University of Technology Sydney</span>
           </div>
-
+          
           <div class="is-size-6 has-text-centered">
             <span>📧 <a href="mailto:joy.zhang@x-humanoid.com">joy.zhang</a>, <a href="mailto:jony.zhang@x-humanoid.com">jony.zhang</a>, <a href="mailto:jason.ju@x-humanoid.com">jason.ju</a> @x-humanoid.com</span><br>
             <span><sup>*</sup> Contributed equally. <sup>‡</sup> Project leader. <sup>†</sup> Corresponding authors.</span>
           </div>
-
+          
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -97,3 +97,223 @@
               </span>
 
               <!-- Code Link. -->
+              <span class="link-block">
+                <a href="http://10.0.3.101/LLM/agent/VLMEvalKit/-/tree/release_v1.0?ref_type=heads"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-video">
+          <iframe src="./static/videos/robot_operation_testing.mp4"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            While multimodal large language models (MLLMs) have made groundbreaking progress in embodied intelligence, they still face significant challenges in spatial reasoning for complex long-horizon tasks. To address this gap, we propose EmbodiedVSR (Embodied Visual Spatial Reasoning), a novel framework that integrates dynamic scene graph-guided Chain-of-Thought (CoT) reasoning to enhance spatial understanding for embodied agents. By explicitly constructing structured knowledge representations through dynamic scene graphs, our method enables zero-shot spatial reasoning without task-specific fine-tuning. This approach not only disentangles intricate spatial relationships but also aligns reasoning steps with actionable environmental dynamics.
+          </p>
+          <p>
+            To rigorously evaluate performance, we introduce the eSpatial-Benchmark, a comprehensive dataset including real-world embodied scenarios with fine-grained spatial annotations and adaptive task difficulty levels. Experiments demonstrate that our framework significantly outperforms existing MLLM-based methods in accuracy and reasoning coherence, particularly in long-horizon tasks requiring iterative environment interaction. The results reveal the untapped potential of MLLMs for embodied intelligence when equipped with structured, explainable reasoning mechanisms, paving the way for more reliable deployment in real-world spatial applications.
+          
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- 新增Teaser图片 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image is-16by9">
+          <img src="./static/images/teaser.png" alt="EmbodiedVSR核心框架示意图">
+        </figure>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            EmbodiedVSR
+            fuses dynamic scene graph generation, embodied spatial chain-of-thought reasoning and robotic control, enabling robots to grasp spatial
+            object relationships. Additionally, we developed the eSpatial-Benchmark and dataset, further empowering the application of multimodal
+            large models in embodied intelligence scenarios.          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Benchmark Datasets</h2>
+        <div class="content has-text-justified">
+          <p>
+            Many benchmark datasets have been published with the ad-
+            vancement of MLLMs. Though the models continuously
+            get higher scores in these benchmarks, our embodiment ex-
+            periments showed an undesired success rate when the tasks
+            require an accurate visual understanding of the scene. This
+            phenomenon raises a concern about whether the Q&A-pair
+            and the evaluation indices are relevant to the scene un-
+            derstanding of embodied intelligence, as they require the
+            knowledge to guide the planning and action. Consequently,
+            we concluded that the current MLLMs are still struggling
+            with the five significant visual challenges mentioned.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Data. -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image is-16by9">
+          <img src="./static/images/fig3.png" alt="">
+        </figure>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image" style="margin: 0 auto;">
+          <img src="./static/images/fig2.png" alt="" style="width: 100%; height: auto; display: block;">
+        </figure>
+      </div>
+    </div>
+    
+
+    <!-- Data -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="content has-text-justified">
+          <p>
+            To validate the advancement of our method, we evaluated
+            EmbodiedVSR and baseline models (GPT-4o, NVLM-D-
+            72B, and Llama-3.2 90B) on our eSpatial dataset including
+            eSpatial-X, eSpatial-RoboMIND, and spatial-Lego. To fur-
+            ther validate the efficacy of our method in embodied scenar-
+            ios, we established an automated LEGO assembly system
+            on the Tien Kung humanoid robot. Initially, we employed
+            EmbodiedVSR + GPT-4o to deconstruct the LEGO sample,
+            subsequently transmitting the deconstruction results to the
+            robot to assemble an identical LEGO structure.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Data. -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image is-16by9">
+          <img src="./static/images/table1.png" alt="" style="width: 100%; height: auto; display: block;">
+        </figure>
+        <figure class="image is-16by9">
+          <img src="./static/images/fig4.png" alt="" style="width: 100%; height: auto; display: block;">
+        </figure>
+        <figure class="image is-16by9">
+          <img src="./static/images/table2.png" alt="" style="width: 100%; height: auto; display: block;">
+        </figure>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zhang2025embodiedvsr,
+      title     = {EmbodiedVSR: Dynamic Scene Graph-Guided Chain-of-Thought Reasoning for Visual Spatial Tasks},
+      author    = {Zhang, Yi and Zhang, Qiang and Ju, Xiaozhu and Liu, Zhaoyang and Mao, Jilei and Sun, Jingkai and Wu, Jintao and Gao, Shixiong and Cai, Shihan and Qin, Zhiyuan and Liang, Linkai and Wang, Jiaxu and Duan, Yiqun and Cao, Jiahang and Xu, Renjing and Tang, Jian},
+      booktitle = {Proc. IEEE/CVF International Conference on Computer Vision (ICCV)},
+      year      = {2025}
+    }</code></pre>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
